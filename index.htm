@@ -1,62 +1,127 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Josue Ortiz</title>
-    <link rel="stylesheet" href="./css/styles.css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <header>
-        <nav>
-            <div>
-                <img src="./img/logo.png" alt="" id="logo">
-            </div>
-            <ul>
-                <li><a href="#about">Sobre Mí</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <div>
+          <img src="./img/logo.png" alt="" id="logo" />
+        </div>
+        <ul>
+          <li><a href="#about">Sobre Mí</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
 
     <section id="seccion_principal">
-        <div>
-            <h2>Josue Ortiz</h2>
-        </div>
-        <div>
-            <img src="./img/Josue_foto.jpg" alt="" id="foto_josue">
-            <p>Desarrollador Web | Programador</p>
-        </div>
+      <div>
+        <h2>Josue Ortiz</h2>
+      </div>
+      <div>
+        <img src="./img/Josue_foto.jpg" alt="" id="foto_josue" />
+        <p>Desarrollador Web | Programador</p>
+      </div>
     </section>
-    
+
     <section id="about">
-        <h2>Sobre Mí</h2>
-        <p>Breve descripción sobre ti y tus habilidades.</p>
+      <h2>Sobre Mí</h2>
+      <p>
+        Soy un desarrollador web apasionado por la creación de soluciones
+        innovadoras y eficientes. Con experiencia en tecnologías como HTML, CSS,
+        JavaScript y frameworks modernos, me especializo en construir
+        aplicaciones optimizadas y escalables. Siempre estoy en búsqueda de
+        nuevos retos que me permitan mejorar mis habilidades y contribuir a
+        proyectos impactantes.
+      </p>
+
+      <h2>Tecnologías</h2>
+      <div class="contenedor_tecnologia_principal">
+        <div class="contenedor_tecnologia">
+          <h3>HTML & CSS</h3>
+          <img
+            src="./img/HTML CSS y JavaScript.png"
+            alt=""
+            style="width: 500px"
+          />
+          <p>
+            Base fundamental para la creación de sitios web responsivos y
+            accesibles, con un enfoque en buenas prácticas y diseño atractivo.
+            Desarrollo de aplicaciones interactivas y dinámicas para la web, con
+            experiencia en manipulación del DOM y consumo de APIs.
+          </p>
+        </div>
+        <div class="contenedor_tecnologia">
+          <h3>PYTHON</h3>
+          <img src="./img/PythonLogo.png" alt="" style="width: 500px" />
+          <p>
+            Lenguaje versátil para desarrollo web, automatización, ciencia de
+            datos e inteligencia artificial.
+          </p>
+        </div>
+        <div>
+          <div class="contenedor_tecnologia">
+            <h3>Java</h3>
+            <img src="./img/Java.jpg" alt="" style="width: 500px" />
+            <p>
+              Programación orientada a objetos para aplicaciones robustas y
+              escalables en diversos entornos, como el desarrollo de back-end,
+              aplicaciones móviles o aplicaciones de escritorio.
+            </p>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div>
+        <div class="contenedor_tecnologia">
+          <h3>SQLServer, MySQL y Postgres</h3>
+          <div class="contenedor_imagenes">
+            <img src="./img/SqlServerLogo.png" alt="" style="width: 500px" />
+            <img src="./img/postgres-logo.png" alt="" style="width: 500px" />
+            <img src="./img/MysqlLogo.png" alt="" style="width: 500px" />
+          </div>
+          <p>
+            Diseño, administración y optimización de bases de datos relacionales
+            para el manejo eficiente de la información.
+          </p>
+        </div>
+      </div>
     </section>
-    
+
     <section id="projects">
-        <h2>Proyectos</h2>
-        <div class="project">
-            <h3>Proyecto 1</h3>
-            <p>Descripción breve del proyecto.</p>
-            <a href="#">Ver más</a>
-        </div>
-        <div class="project">
-            <h3>Proyecto 2</h3>
-            <p>Descripción breve del proyecto.</p>
-            <a href="#">Ver más</a>
-        </div>
+      <h2>Mis Proyectos</h2>
+      <div id="github-projects"></div>
     </section>
-    
+
     <section id="contact">
-        <h2>Contacto</h2>
-        <p>Puedes contactarme en: <a href="ortiz.ochoa.david.josue@gmail.com">ortiz.ochoa.david.josue@gmail.com</a></p>
+      <h2>Contacto</h2>
+      <p> <i class="fa-solid fa-envelope"></i> Email: ortiz.ochoa.david.josue@gmail.com</p>
+      <p>
+        <i class="fa-brands fa-whatsapp"></i> Whatsapp:
+        <a
+          href="https://api.whatsapp.com/send?phone=593997529265&text=Hola,%20necesito%20que%20tus%20servicios"
+          >0997529265</a
+        >
+      </p>
+      <p><i class="fa-brands fa-github"></i> GitHub: Zitr-ctrl </p> 
     </section>
-    
+
     <footer>
-        <p>&copy; 2025 Josue Ortiz. Todos los derechos reservados.</p>
+      <p>&copy; 2025 Josue Ortiz. Todos los derechos reservados.</p>
     </footer>
-</body>
+    <script src="./js/index.js"></script>
+  </body>
 </html>

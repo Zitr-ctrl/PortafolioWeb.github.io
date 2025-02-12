@@ -1,3 +1,16 @@
+*{
+    font-size: 20px;
+    color: white;
+}
+
+h1{
+    font-size: 30px;
+}
+
+h2{
+    font-size: 25px;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -73,11 +86,78 @@ section {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.project {
-    background: rgb(126, 126, 126);
+.contenedor_tecnologia_principal{
+    display: flex;
+    flex: 1;
+    gap: 50px;
+}
+
+.contenedor_tecnologia{
+    border: 5px solid black;
     padding: 20px;
-    margin: 20px 0;
+    height: 1;
+}
+
+.contenedor_imagenes{
+    display: flex;
+    flex: 1;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#github-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.project {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.project p {
+    color: #666;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: #007BFF;
+    color: white;
+    text-decoration: none;
     border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.project a:hover {
+    background: #0056b3;
 }
 
 footer {
